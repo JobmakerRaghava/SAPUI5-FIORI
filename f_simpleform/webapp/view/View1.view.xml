@@ -1,0 +1,30 @@
+<mvc:View controllerName="simpleform.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:layout="sap.ui.layout">
+    <Page id="page" title="{i18n>title}" showHeader="false">
+        <content>
+       
+        <form:SimpleForm id="form" editable="true" title="Student Details">
+        <Label id="l1" text="Name"></Label>
+        <Input id="n1" placeholder="type name here" width="30%" value="{path: '/Details/name'}">
+        </Input>
+        <Label id="l2" text="Surname"></Label>
+        <Input id="n2" placeholder="type surname here" width="20%" value="{/Details/surname}"></Input>
+        <Label id="l3" text="Id"></Label>
+        <Input id="n3" placeholder="type Id here" width="30%" value="{/Details/id}"></Input>
+        <Label id="l4" text="Mobile"></Label>
+        <layout:HorizontalLayout id="hl"  >
+        <Input id="n6" value="+91" editable="false" width="3em" ></Input>
+        <Input id="n4" placeholder="type mobile number here" width="117%" value="{/Details/mobile}"></Input>
+        </layout:HorizontalLayout>
+        <Label id="l5" text="email"></Label>
+        <Input id="n5" placeholder="type email here" width="30%" value="{/Details/mail}"></Input>
+        </form:SimpleForm>
+        
+        </content>
+       
+        <Button id="b1" type="Accept" text="Get Details" press="onPress" ></Button>
+    </Page>
+</mvc:View>

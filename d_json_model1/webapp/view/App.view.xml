@@ -1,0 +1,21 @@
+<mvc:View controllerName="ns.raghava.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Shell id="shell">
+    <App id="app">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <l:HorizontalLayout id="hori">
+					<Button id="b1" type="Ghost" text=" Click me " press="onClick">
+					</Button>
+					<Button id="b2" type="Transparent" text="ok">
+					</Button>
+					<Button id="b3" type="Back" text="{/name}">
+					</Button>
+				</l:HorizontalLayout>
+              <Input placeholder="type here" id="in" value="{/name}" enabled="{/active}"></Input>
+                </content>
+    </Page>
+    </App>
+    </Shell>
+</mvc:View>
