@@ -1,0 +1,28 @@
+<mvc:View controllerName="z08namedmodels.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <form:SimpleForm id="formL"  editable="true">
+        <Label id="l1" text="Name"></Label>
+        <Input id="n1" width="30%" value="{/name}"></Input>
+
+        <Label id="l2" text="Surname"></Label>
+        <Input id="n2" width="30%" value="{/surname}"></Input>
+
+        <Label id="l3" text="Id"></Label>
+        <Input id="n3" width="30%" value="{Id>/id}"></Input>
+
+        <Label id="l4" text="Location"></Label>
+        <Input id="n4" width="30%" value="{Id>/location}"></Input>
+
+        <Label id="l5" text="Age"></Label>
+        <Input id="n5" width="30%" value="{Age>/age}"></Input>
+
+        <Label id="l6" text="Gender"></Label>
+        <Input id="n6" width="30%" value="{Age>/gender}"></Input>
+        </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
