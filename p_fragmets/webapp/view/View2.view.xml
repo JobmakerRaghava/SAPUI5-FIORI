@@ -1,0 +1,17 @@
+<mvc:View controllerName="pfragmets.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page2">
+        <content>
+            <core:Fragment id="idf" fragmentName="pfragmets.view.Head" type="XML" />
+            <VBox id="idv">
+                <Text id="idt" text="Page 2"></Text>
+                <Button id="idb1" text="Click to go to Page1" press="onClick"></Button>
+                <Label id="idl" text="Selected country is"/>
+                <Input id="idInput" width="20%" />
+            </VBox>
+        </content>
+    </Page>
+
+</mvc:View>

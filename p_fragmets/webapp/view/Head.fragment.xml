@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Title id="idT" text="Fragment" />
+    <Button id="idb1" text="Frag button" press="frag" />
+
+</core:FragmentDefinition>

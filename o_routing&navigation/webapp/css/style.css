@@ -1,0 +1,15 @@
+/* Enter your custom styles here */
+.text {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+   
+    
+}
+
+.text2 {
+    text-transform: uppercase;
+}
+
+.sapMBtnContent {
+    color:yellow;
+}

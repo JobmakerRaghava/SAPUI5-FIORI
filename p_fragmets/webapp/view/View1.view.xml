@@ -1,0 +1,21 @@
+<mvc:View controllerName="pfragmets.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Shell id="idShell" backgroundColor="blue">
+        <App id="idApp">
+            <Page id="page" title="{i18n>title}">
+                <content>
+                    <core:Fragment id="idf" fragmentName="pfragmets.view.Head" type="XML" />
+                    <VBox id="idVbox">
+                    <Title id="idt" text="Page one"></Title>
+                    
+                        <Button id="idb1" text="Click to go secont page" press="onClick"></Button>
+                    </VBox>
+                </content>
+            </Page>
+        </App>
+    </Shell>
+
+
+</mvc:View>
