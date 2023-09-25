@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>1st UI5 application</title>
+    <script id="sap-ui-bootstrap"
+    src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+    data-sap-ui-theme="sap_fiori_3_dark"
+    data-sap-ui-libs="sap.m">
+</script>
+<script>
+    var bt1 = new sap.m.Button("butt",{
+        text:"Ui5 button",
+        icon:"sap-icon://delete",
+        type:"Emphasized",
+        width: "15em",
+        press:function() {
+            alert("This is my first ui5 program");
+           
+        }   
+    });
+    
+    var bt2 = new sap.m.Button("butt2",{
+        text:"Click",
+        press:function() {
+            alert(oInp.getValue());
+           // alert(sap.ui.getCore().byId("txt").getValue());
+        }   
+    });
+    
+    var oInp = new sap.m.Input("txt", {
+        placeholder:"Enter some text",
+        type:"Password",
+        width:"20%",
+    });
+    bt1.placeAt("d1");
+    bt2.placeAt("sp2");
+    oInp.placeAt("sp1");
+   
+</script>
+</head>
+<body id="bg">
+    <div id="d1"></div>
+    <div id="d2">
+        <span id="sp1"></span>
+        <span id="sp2"></span>
+    </div>
+    
+</body>
+</html>

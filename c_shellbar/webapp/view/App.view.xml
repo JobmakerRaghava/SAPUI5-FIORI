@@ -1,0 +1,18 @@
+<mvc:View xmlns:f="sap.f" controllerName="practice.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <f:ShellBar id="shellbar" title="Application Title" secondTitle="{/title}" homeIcon="https://lh3.googleusercontent.com/ogw/ADea4I6pk8nNocwrj9XjXYDKcjwCnCwihL9HDPljn4VbDg=s32-c-mo" showCopilot="true" showSearch="true" showNotifications="true" showProductSwitcher="true" notificationsNumber="2">
+        <f:menu>
+            <Menu id="menu">
+                <MenuItem id="item1" text="{/type}" icon="sap-icon://flight" />
+                <MenuItem id="utem2" text="{/name}" icon="sap-icon://car-rental" />
+            </Menu>
+        </f:menu>
+        <f:profile>
+            <Avatar id="avatar" displayShape="Circle" displaySize="L">
+            </Avatar>
+        </f:profile>
+    </f:ShellBar>
+    <Input id="idInput" submit="onError" required="true" maxLength="13" value="+91"></Input>
+    <Button id="but" text="Button" type="Accept"></Button>
+</mvc:View>
