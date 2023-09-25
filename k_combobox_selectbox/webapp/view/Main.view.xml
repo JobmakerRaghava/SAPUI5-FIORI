@@ -1,0 +1,26 @@
+<mvc:View xmlns:layout="sap.ui.layout"
+    xmlns:f="sap.f" controllerName="comboboxselectbox.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" displayBlock="true"
+    xmlns="sap.m">
+    <f:ShellBar id="shell" title="ComboBox and SelectBox" homeIcon="https://i.ytimg.com/vi/c0NehCRNZoY/maxresdefault.jpg">
+        <f:profile>
+            <f:Avatar id="avathar" displayShape="Circle" initials="RAGHAVA"  />
+        </f:profile>
+    </f:ShellBar>
+    <layout:VerticalLayout id="vLa">
+        <ComboBox id="combo" items="{ path:'/country' ,
+        sorter:{path: 'name'},
+        formatter:'.onCaps'
+        }" showSecondaryValues="true">
+            <core:ListItem id="li" key="{code}" text="{name}" additionalText="{code}"></core:ListItem>
+        </ComboBox>
+
+       <Select id="select" items="{ path:'/country', sorter:{path:'name'}}" showSecondaryValues="true" selectedKey="{/code}" >
+            <core:ListItem id="Li2" key="{code}" text="{name}" additionalText="{code}">
+            </core:ListItem>
+        </Select> 
+       
+    </layout:VerticalLayout>
+
+</mvc:View>

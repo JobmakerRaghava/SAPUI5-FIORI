@@ -1,0 +1,8 @@
+<mvc:View  
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m" 
+xmlns:core="sap.ui.core">
+<Page id="page2">
+<Text id="t" text="Raghava"></Text>
+</Page>
+</mvc:View>

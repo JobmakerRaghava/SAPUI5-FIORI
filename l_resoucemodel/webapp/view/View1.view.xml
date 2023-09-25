@@ -1,0 +1,124 @@
+<mvc:View controllerName="resoucemodel.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:table="sap.ui.table" xmlns:core="sap.ui.core">
+     <Page id="page" title="Student master data">
+        <content>
+            <table:Table id="table" rows="{/stu}" alternateRowColors="true" rowHeight="25%" selectionMode="MultiToggle">
+
+                <table:columns >
+                    <table:Column id="col1" hAlign="Center" width="3em">
+                        <Label id="l1" text="{i18n>ID}" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{ID}" id="t1"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+                <table:columns >
+                    <table:Column id="col2" hAlign="Center" width="7em">
+                        <Label id="l2" text="{i18n>Name}" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{path: 'Name'}" id="t2"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+                <table:columns >
+                    <table:Column id="col3" hAlign="Center" width="4em">
+                        <Label id="l3" text="{i18n>Year}" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{path : 'Year' }" id="t3"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+                <table:columns >
+                    <table:Column id="col4" hAlign="Center" width="5em">
+                        <Label id="l4" text="{i18n>Branch}" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{Branch}" id="t4"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+                <table:columns >
+                    <table:Column id="col5" hAlign="Center" width="3em">
+                        <Label id="l5" text="S1" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{path: 'S1'}" id="t5"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+
+                <table:columns >
+                    <table:Column id="col6" hAlign="Center" width="3em">
+                        <Label id="l6" text="S2" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{S2}" id="t6"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+
+                <table:columns >
+                    <table:Column id="col7" hAlign="Center" width="3em">
+                        <Label id="l7" text="S3" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{S3}" id="t7"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+
+                <table:columns >
+                    <table:Column id="col8" hAlign="Center" width="3em">
+                        <Label id="l8" text="S4" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{S4}" id="t8"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+                <table:columns >
+                    <table:Column id="col9" hAlign="Center" width="7em" filterProperty="HonorDegree">
+                        <Label id="l9" text="{i18n>HonorDegree}" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{HonorDegree}" id="t9"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+                <table:columns >
+                    <table:Column id="col11" hAlign="Center" width="4em">
+                        <Label id="l11" text="{i18n>Status}" design="Bold"></Label>
+                        <table:template>
+                            <core:Icon id="i1" src="{=${HonorDegree} === 'eligible' ? 'sap-icon://accept' : 'sap-icon://decline'}" color="{=${HonorDegree} === 'eligible' ? 'green':'red'}" />
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+                <table:columns >
+                    <table:Column id="col10" hAlign="Center" width="10em" sortProperty="HonorDomain">
+                        <Label id="l10" text="{i18n>HonorDomain}" design="Bold"></Label>
+                        <table:template>
+                            <Text text="{HonorDomain}" id="t10"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+
+
+
+
+            </table:Table>
+            <Button id="bt" text="Click" press="onClick"></Button>
+        </content>
+    </Page>
+</mvc:View>
