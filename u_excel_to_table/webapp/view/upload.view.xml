@@ -1,0 +1,50 @@
+<mvc:View xmlns:upload="sap.m.upload" controllerName="uexceltotable.controller.upload"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:u="sap.ui.unified">
+    <Page id="page" title="{i18n>title}">
+        <customHeader>
+            <Bar>
+            <contentLeft>
+           </contentLeft>
+                <contentMiddle>
+                    <Label text="Read Data From Excel"/>
+                </contentMiddle>
+                <contentRight>
+                    <u:FileUploader id="FileUploaderId" sameFilenameAllowed="true" iconOnly="false" buttonOnly="true" fileType="XLSX,xlsx" icon="sap-icon://upload" iconFirst="true" style="Emphasized" change="onUpload"/>
+                    <Button id="idButton" text="Download excel" press="onDownload"  type="Emphasized"></Button>
+                </contentRight>
+            </Bar>
+        </customHeader>
+        <content>
+         <!-- <upload:UploadSet id="idUploadSet"  uploadButtonInvisible="false"  uploadCompleted="onComplete"></upload:UploadSet>
+             -->
+            <Table items="{localModel>/items}" mode="MultiSelect" id="idItemsTable">
+                <columns>
+                    <Column>
+                        <Label text="Name"/>
+                    </Column>
+                    <Column>
+                        <Label text="Age"/>
+                    </Column>
+                    <Column>
+                        <Label text="Jobs"/>
+                    </Column>
+                    <Column>
+                        <Label text="Address"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{localModel>Name}"/>
+                            <Text text="{localModel>Age}"/>
+                            <Text text="{localModel>Job}"/>
+                            <Text text="{localModel>Address}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
