@@ -1,0 +1,12 @@
+<mvc:View controllerName="alltopics.controller.Controls"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" displayBlock="true" height="100%" busyIndicatorDelay="0">
+	<GenericTile id="Gtile" header="Analytical OverView Page" subheader="text" mode="ContentMode">
+	<tileContent>
+	<TileContent footer="rag"></TileContent>
+	</tileContent>
+	
+	</GenericTile>
+
+
+</mvc:View>

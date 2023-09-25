@@ -1,0 +1,28 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="alltopics.controller.ProductDetails" displayBlock="true">
+    <Page id="page" showNavButton="true" navButtonPress="onNav" title="Product Details" busy="true"  busyIndicatorSize="Small">
+        <content>
+            <form:SimpleForm id="form" editable="true">
+                <Label text="ProductID" id="l1" />
+                <Text text="{Odata>ProductID}" id="t1" />
+                <Label text="ProductName" id="l2" />
+                <Text text="{Odata>ProductName}" id="t2" />
+                <Label text="SupplierID" id="l3" />
+                <Text text="{Odata>SupplierID}" id="t3" />
+                <Label text="CategoryID" id="l4" />
+                <Text text="{Odata>CategoryID}" id="t4" />
+                <Label text="QuantityPerUnit" id="l5" />
+                <Text text="{Odata>QuantityPerUnit}" id="t5" />
+                <Label text="UnitPrice" id="l6" />
+                <Text text="{Odata>UnitPrice}" id="t6" />
+                <Label text="UnitsInStock" id="l7" />
+                <Text text="{Odata>UnitsInStock}" id="t7" />
+                <Label text="UnitsOnOrder" id="l8" />
+                <Text text="{Odata>UnitsOnOrder}" id="t8" />
+                <Label text="ReorderLevel" id="l9" />
+                <Text text="{Odata>ReorderLevel}" id="t9" />
+                <Label text="Discontinued" id="l10" />
+                <Text text="{Odata>Discontinued}" id="t10" />
+            </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.f"
+    xmlns:m="sap.m"
+    xmlns:core="sap.ui.core">
+    <ShellBar id="shell" title="HomePage" secondTitle="{projects/name}" showNotifications="true" notificationsNumber="" showCopilot="true" class="homeshell">
+        <profile>
+            <m:Avatar id="avatar" displayShape="Circle" displaySize="L">
+            </m:Avatar>
+        </profile>
+    </ShellBar>
+</core:FragmentDefinition>

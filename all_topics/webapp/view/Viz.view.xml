@@ -1,0 +1,26 @@
+<mvc:View controllerName="alltopics.controller.Viz"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:widgets="sap.ui.integration.widgets" displayBlock="true" height="100%" busyIndicatorDelay="0">
+    <Panel id="panel">
+    <content>
+    <f:GridContainer id="gc">
+        <f:layoutS>
+            <f:GridContainerSettings id="gg" rowSize="2rem" columnSize="2rem" gap="3rem" />
+        </f:layoutS>
+        <widgets:Card id="donut" manifest="{Viz>/donut}">
+            <widgets:layoutData>
+                <f:GridContainerItemLayoutData id="grid" rows="3" columns="3" />
+            </widgets:layoutData>
+        </widgets:Card>
+        <widgets:Card id="donut2" manifest="{Viz>/donut}">
+            <widgets:layoutData>
+                <f:GridContainerItemLayoutData id="grid2" rows="3" columns="3" />
+            </widgets:layoutData>
+        </widgets:Card>
+    </f:GridContainer>
+    </content>
+    </Panel>
+    
+</mvc:View>

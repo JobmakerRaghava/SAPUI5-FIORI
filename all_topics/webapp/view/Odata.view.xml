@@ -1,0 +1,57 @@
+<mvc:View controllerName="alltopics.controller.Odata"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" displayBlock="true" height="100%" busyIndicatorDelay="0">
+
+<Table id="table2" items="{
+								path: '/Order_Details', model : 'Odata',
+								parameters: {
+									expand: 'Order'
+								}
+                             }" sticky="ColumnHeaders" growing="true" growingScrollToLoad="true" >
+        <headerToolbar>
+            <OverflowToolbar id="over">
+                <ToolbarSpacer id="toolspacer1" width="40%"/>
+                <Title id="Orderdetails" text="Order details" />
+                <ToolbarSpacer id="toolspacer2" />
+                <ToolbarSeparator id="tt"></ToolbarSeparator>
+                <SearchField id="search" width="15%" search=".onLiveSearch">
+                </SearchField>
+            </OverflowToolbar>
+        </headerToolbar>
+        <columns>
+            <Column id="col1">
+                <Text id="tx1" text="Order ID" />
+            </Column>
+            <Column id="col2">
+                <Text id="tx2" text="ProductID" />
+            </Column>
+            <Column id="col3">
+                <Text id="tx3" text="UnitPrice" />
+            </Column>
+            <Column id="col4">
+                <Text id="tx4" text="Quantity" />
+            </Column>
+            <Column id="col5">
+                <Text id="tx5" text="Discount" />
+            </Column>
+            <Column id="col6">
+                <Text id="tx6" text="CustomerID" />
+                
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem id="li1" type="Navigation" navigated="true" press="itemPress" detailPress="aa" >
+                <cells>
+                    <Text id="t2" text="{Odata>OrderID}" />
+                    <Text id="t3" text="{Odata>ProductID}" />
+                    <Text id="t4" text="{Odata>UnitPrice}" />
+                    <Text id="t5" text="{Odata>Quantity}" />
+                    <Text id="t6" text="{Odata>Discount}" />
+                    <Text id="t7" text="{Odata>Order/CustomerID}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+
+    
+</mvc:View>

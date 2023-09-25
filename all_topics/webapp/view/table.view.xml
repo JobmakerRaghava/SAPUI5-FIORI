@@ -1,0 +1,52 @@
+<mvc:View controllerName="alltopics.controller.table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" displayBlock="true" height="100%" busyIndicatorDelay="0">
+    <Panel id="panel">
+        <content>
+            <Table id="table" alternateRowColors="true" items="{PJ>/prj}" sticky="ColumnHeaders" mode="SingleSelectLeft">
+                <columns>
+                    <Column id="column1" width="20%" styleClass="homeTable">
+                        <Title id="colhead1" text="Name" titleStyle="H5" />
+                    </Column>
+                    <Column id="column2" width="40%" styleClass="homeTable">
+                        <Title id="colHead2" text="Description" titleStyle="H5" />
+                    </Column>
+                    <Column id="column3" width="20%" styleClass="homeTable">
+                        <Title id="colHead3" text="Creation Date" titleStyle="H5" />
+                    </Column>
+                    <Column id="column4" width="20%" styleClass="homeTable">
+                        <Title id="colHead4" text="Status" titleStyle="H5" />
+                    </Column>
+                </columns>
+                <headerToolbar>
+                     <OverflowToolbar id="over">
+                        <ToolbarSpacer id="toolspacer1" width="40%"/>
+                        <Title id="Orderdetails" text="Project Details" />
+                        <ToolbarSpacer id="toolspacer2" />
+                        <ToolbarSeparator id="tt"></ToolbarSeparator>
+                        <SearchField id="search" width="15%" liveChange=".onLiveSearch">
+                        </SearchField>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <items>
+                    <ColumnListItem id="listitems" vAlign="Bottom">
+                        <cells>
+                            <Link id="row1" text="{PJ>name}" href="{PJ>url}" target="_blank" emphasized="true" />
+                            <Text id="row2" text="{PJ>description}" />
+                            <DatePicker id="picker" value="{PJ>cod}" editable="false" displayFormat="long" />
+                            <ObjectStatus id="row4" text="{PJ>status}" inverted="true" state="{
+												path: 'status',
+												model: 'PJ',
+												formatter: '.formatter.status'
+											}" icon="{
+												path: 'status',
+												model: 'PJ',
+												formatter: '.formatter.icon'
+											}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Panel>
+</mvc:View>

@@ -1,0 +1,78 @@
+{
+    "donut": {
+        "sap.app": {
+            "id": "sample.CardsLayout.model.donut",
+            "type": "card"
+        },
+        "sap.card": {
+            "type": "Analytical",
+            "header": {
+                "title": "Weather Failures"
+            },
+            "content": {
+                "chartType": "Donut",
+                "legend": {
+                    "visible": true,
+                    "position": "Bottom",
+                    "alignment": "Left"
+                },
+                "plotArea": {
+                    "dataLabel": {
+                        "visible": true,
+                        "showTotal": false
+                    },
+                    "drawingEffect":"glossy"
+                },
+                "title": {
+                    "visible": false
+                },
+                "measureAxis": "size",
+                "dimensionAxis": "color",
+                "data": {
+                    "json": {
+                        "measures": [
+                            {
+                                "measureName": "Storm Wind",
+                                "value": 1564235.29
+                            },
+                            {
+                                "measureName": "Storm Wind",
+                                "value": 157913.07
+                            },
+                            {
+                                "measureName": "Rain",
+                                "value": 1085567.22
+                            },
+                            {
+                                "measureName": "Rain",
+                                "value": 245609.486884
+                            },
+                            {
+                                "measureName": "Temperature",
+                                "value": 345292.06
+                            },
+                            {
+                                "measureName": "Temperature",
+                                "value": 82922.07
+                            }
+                        ]
+                    },
+                    "path": "/measures"
+                },
+                "dimensions": [
+                    {
+                        "label": "Measure Name",
+                        "value": "{measureName}"
+                    }
+                ],
+                "measures": [
+                    {
+                        "label": "Value",
+                        "value": "{value}"
+                    }
+                ]
+              
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/* Enter your custom styles here */
+/* Enter your custom styles here */
+/* Enter your custom styles here */
+.pageBG {
+    background: url(https://getwallpapers.com/wallpaper/full/5/a/7/795479-download-cool-sunset-backgrounds-2560x1600-photo.jpg);
+}
+
+.homeshell {
+background-color: darkgrey;
+}
+
+.sapFDynamicPageTitleMain>.sapFDynamicPageTitleMainInner .sapFDynamicPageTitleMainHeading .sapFDynamicPageTitleMainHeadingInner .sapMTitle.hometitle 
+ {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.homesubtitle {
+    font-size: .6rem;
+
+}
+
+.homeTable {
+    border-left: 1px solid lightgray;
+    
+}
+

@@ -1,0 +1,69 @@
+<mvc:View xmlns:f="sap.f"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" controllerName="alltopics.controller.Home" displayBlock="true">
+    <!-- View no:2 Home View -->
+    <f:DynamicPage id="dynamic" showFooter="true" stickySubheaderProvider="iconTabBar"  busyIndicatorDelay="0" busy="true" busyIndicatorSize="Small" class="sapUiResponsiveContentPadding">
+        <f:title>
+            <f:DynamicPageTitle id="dytitle">
+                <f:heading>
+                    <HBox id="bixh" width="100%">
+                        <items>
+                            <Title id="title" text="Projects" level="H1" titleStyle="H1" class="hometitle" />
+                        </items>
+                    </HBox>
+                </f:heading>
+                <f:breadcrumbs>
+                    <Breadcrumbs id="bread" separatorStyle="BackSlash">
+                        <Link id="link1" text="Facebook" target="_blank" href="https://www.facebook.com/" />
+                        <Link id="link2" text="Cockpit" target="_blank" href="https://account.hanatrial.ondemand.com/trial/#/globalaccount/0fba32fd-cde5-4d04-9179-f4234372a09f/subaccount/5c67a95f-4158-4836-8d9d-14cfd08f44bc/destinations" />
+                        <Link id="link3" text="ES5 Reg" target="_blank" href="https://register.sapdevcenter.com/SUPSignForms/" />
+                        <Link id="link4" text="ES5 Login" target="_blank" href="https://sapes5.sapdevcenter.com/sap/bc/gui/sap/its/webgui" />
+                        <Link id="link5" text="Mega" target="_blank" href="https://mega.nz/fm/o45zBSja" />
+                    </Breadcrumbs>
+                </f:breadcrumbs>
+                <f:expandedContent>
+                    <Label id="label" text="HTML CSS JS UI5" class="homesubtitle" />
+                </f:expandedContent>
+                <f:navigationActions>
+
+                </f:navigationActions>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader id="dyhead" backgroundDesign="Solid">
+                <HBox id="hbox1" alignContent="Start">
+                    <Text id="date" text="Date and Time :" class="sapUiTinyMarginEnd" />
+                    <Text id="date1" class="sapUiSmallMarginEnd" />
+                </HBox>
+            </f:DynamicPageHeader>
+        </f:header>
+
+        <f:content>
+            <IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding" enableTabReordering="true">
+                <items>
+                    <IconTabFilter id="icon4" design="Horizontal" text="Controls" icon="sap-icon://wrench">
+                        <mvc:XMLView id="xmlview1" viewName="alltopics.view.Controls"></mvc:XMLView>
+                    </IconTabFilter>
+                    <IconTabFilter id="icon2" design="Horizontal" text="Cards" icon="sap-icon://card" iconColor="Negative">
+                        <mvc:XMLView id="xmlview2" viewName="alltopics.view.Viz"></mvc:XMLView>
+                    </IconTabFilter>
+                    <IconTabFilter id="icon" text="Projects" count="{PJ>/prj/length}" iconColor="Critical" design="Horizontal" icon="sap-icon://project-definition-triangle">
+                        <mvc:XMLView id="xmlview3" viewName="alltopics.view.table"></mvc:XMLView>
+                    </IconTabFilter>
+                    <IconTabFilter id="odata" text="NorthWindV2 data" count="{viewModel>/odatacount}" iconColor="Critical" design="Horizontal" icon="sap-icon://table-view">
+                        <mvc:XMLView id="xmlview4" viewName="alltopics.view.Odata"></mvc:XMLView>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </f:content>
+        <f:footer>
+            <OverflowToolbar id="overflow">
+                <content>
+                    <ToolbarSpacer id="tl" />
+                    <Button id="but1" text="Approve" type="Accept" />
+                    <Button id="but2" text="Reject" type="Reject" />
+                </content>
+            </OverflowToolbar>
+        </f:footer>
+    </f:DynamicPage>
+</mvc:View>

@@ -1,0 +1,161 @@
+{
+    "prj": [
+        {
+            "name": "First UI5",
+            "description": "UI5 application without Views and Controllers",
+            "cod": "04/07/2022",
+            "status": "Completed",
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/a_first_ui5/webapp/index.html"
+        },
+        {
+            "name": "JS View",
+            "description": "JS View including two Buttons",
+            "cod": "04/07/2022",
+            "status": "Completed",
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/b_js_view/webapp/index.html"
+        },
+        {
+            "name": "Shellbar",
+            "description": "Shellbar control with menu buttons and profile-avatar",
+            "cod": "04/07/2022",
+            "status": "Pending",
+           
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/c_shellbar/webapp/index.html"
+        },
+        {
+            "name": "Json Model",
+            "description": "Simple Json model creation in controller",
+            "cod": "04/07/2022",
+            "status": "Completed",
+           
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/d_json_model1/webapp/index.html"
+        },
+        {
+            "name": "Binding Techniques",
+            "description": "Binding Techniques with property binding,bindValue(),bindProperty()",
+            "cod": "07/07/2022",
+            "status": "Completed",
+           
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/e_binding_techniques/webapp/index.html"
+        },
+        {
+            "name": "SimpleForm",
+            "description": "m.SimpleForm control for labels and inputs alignments ",
+            "cod": "07/07/2022",
+            "status": "Completed",
+           
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/f_simpleform/webapp/index.html"
+        },
+
+        {
+            "name": "Expression binding",
+            "description": "Expression binding ",
+            "cod": "14/07/2022",
+            "status": "Completed",
+           
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/g_expression_binding/webapp/index.html"
+        },
+
+
+        {
+            "name": "Named Models",
+            "description": "Mutliple models are used in this application",
+            "cod": "14/07/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/h_named_models/webapp/index.html"
+        },
+
+        {
+            "name": "Table Control",
+            "description": " ui.Table control with multiple rows and columns",
+            "cod": "18/07/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/i_table_control/webapp/index.html"
+        },
+
+        {
+            "name": "Element Binding ",
+            "description": "Element binding technique with Events",
+            "cod": "18/07/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/j_elementbinding_events/webapp/index.html"
+        },
+
+        {
+            "name": "Combo&Select Box",
+            "description": "Dropdown controls with Combobox and Select Box",
+            "cod": "18/07/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/k_combobox_selectbox/webapp/index.html"
+        },
+        {
+            "name": "Resource Model",
+            "description": "i18n model(Resource model) and allows multiple languages.For telugu add-->?sap-language=te at end of url",
+            "cod": "27/07/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/l_resoucemodel/webapp/index.html"
+        },
+
+        {
+            "name": "Search Filters",
+            "description": "Search and Filter controls, search the Item throught the Page",
+            "cod": "15/08/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/m_filters/webapp/index.html"
+        },
+
+        {
+            "name": "Tiles",
+            "description": "Tiles controls. 1x1,2x2,1x2 size and Generic tiles,Standard tiles,Slide Tiles",
+            "cod": "15/08/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/n_tiles/webapp/index.html"
+        },
+        {
+            "name": "Routing and Navigation",
+            "description": "Navigation between two pages and Page patters at url",
+            "cod": "15/08/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/o_routing&navigation/webapp/index.html"
+        },
+        {
+            "name": "Fragments",
+            "description": "Modularization Technique with Fragments",
+            "cod": "20/08/2022",
+            "status": "Completed",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/o_routing&navigation/webapp/index.html"
+        },
+
+        {
+            "name": "Odata V2 NorthWind service",
+            "description": "V2 Northwind service using fiori worklist application",
+            "cod": "08/11/2022",
+            "status": "Completed",
+            
+            "url":"none"
+        },
+
+        {
+            "name": "Real Time Project",
+            "description": "It includes Login page,Dyanamic Page,Fragments,Tables,Formatters,Custom CSS,Shellbar,Dynamic date and Time , Nested views,Cards",
+            "cod": "24/09/2022",
+            "status": "Pending",
+            
+            "url":"https://theia-workspaces-ws-5mljv.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/z_project/webapp/index.html"
+        }
+
+
+       
+
+
+    ]
+}

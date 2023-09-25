@@ -1,0 +1,25 @@
+<mvc:View controllerName="alltopics.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+     <!-- View no:1 Login View -->
+    
+    <Page id="page" title="{i18n>title}"  showHeader="false" class="pageBG">
+        <content>
+            <VBox id="idVBox" alignContent="Center" justifyContent="Center" fitContainer="true" alignItems="Center">
+                <items>
+                    <Input id="userid" placeholder="User ID" required="true" type="Text" autocomplete="true" showSuggestion="true" >
+                    </Input>
+                    <Input id="password" placeholder="Password" required="true" type="Password" liveChange=".onliveChange">
+                    </Input>
+                    <HBox id="idHb"  >
+                        <Button id="signin" text="Sign In" type="Emphasized" class="sapUiTinyMargin" press="onPress" ></Button>
+                        <!-- <Button id="signup" text="Sign Up" type="Emphasized" class="sapUiTinyMargin" ></Button> -->
+                    </HBox>
+
+                </items>
+            </VBox>
+
+
+        </content>
+    </Page>
+</mvc:View>
