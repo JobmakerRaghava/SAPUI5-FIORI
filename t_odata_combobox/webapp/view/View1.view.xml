@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="todatacombobox.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <ComboBox id="idCombo" items="{/Employees}" change="onSelect" showSecondaryValues="true">
+                <core:ListItem id="idlist" text="{LastName}" key="{EmployeeID}" additionalText="{BirthDate}" ></core:ListItem>
+            </ComboBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+.cellBorderRight {
+	border-right: 1px solid lightgray;
+}
+.cellBorderLeft {
+	border-left: 1px solid lightgray;
+}

@@ -1,0 +1,59 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" controllerName="crudqoperations.controller.Home" displayBlock="true">
+    <Page id="page" showHeader="false">
+        <content>
+            <Table id="table2" items="{CRUD>/results}" headerText="Product details({CRUD>/results/length})" sticky="ColumnHeaders" growing="true" growingScrollToLoad="true">
+                <columns >
+                    <Column id="col1" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx1" text="ID" />
+                    </Column>
+                    <Column id="col2" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx2" text="Name" />
+                    </Column>
+                    <Column id="col3" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx3" text="Description" />
+                    </Column>
+                    <Column id="col4" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx4" text="ReleaseDate" />
+                    </Column>
+                    <Column id="col5" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx5" text="Rating" />
+                    </Column>
+                    <Column id="col6" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx6" text="Price" />
+                    </Column>
+                    <Column id="col7" styleClass="cellBorderRight cellBorderLeft">
+                        <Text id="tx7" />
+                    </Column>
+                </columns>
+                <headerToolbar>
+                    <OverflowToolbar id="over">
+                        <Title text="Product details({CRUD>/results/length})"></Title>
+                        <ToolbarSpacer id="toolspacer2" />
+                        <ToolbarSeparator id="tt"></ToolbarSeparator>
+                        <Button icon="sap-icon://add-activity" press=".onAddRecord"></Button>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <items>
+                    <ColumnListItem id="li1">
+                        <cells>
+                            <Text id="t2" text="{CRUD>ID}" />
+                            <Text id="t3" text="{CRUD>Name}" />
+                            <Text id="t4" text="{CRUD>Description}" />
+                            <Text id="t5" text="{CRUD>ReleaseDate}" />
+                            <Text id="t6" text="{CRUD>Rating}" />
+
+                            <Text id="t7" text="{CRUD>Price}" />
+                            <!-- <Button id="idButton" icon="sap-icon://edit" press="onDelete" /> -->
+                            <HBox >
+                                <Button id="idButton" icon="sap-icon://delete" press="onDelete" type="Reject" class="sapUiTinyMargin"/>
+                                <Button id="idButtonEdit" icon="sap-icon://edit" press="onEdit" type="Accept" class="sapUiTinyMargin"/>
+                            </HBox>
+
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

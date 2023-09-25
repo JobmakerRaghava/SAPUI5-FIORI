@@ -1,0 +1,59 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+	<Dialog
+		id="idDialog"
+		contentHeight="50%"
+		contentWidth="40%"
+	>
+		<content>
+			<Label
+				id="idLabel1"
+				text="ID"
+			/>
+			<Input
+				type="Number"
+				id="idInput1"
+			/>
+			<Label text="Name"/>
+			<Input id="idInput2"/>
+			<Label text="Description"/>
+			<Input id="idInput3"/>
+			<Label text="ReleaseDate"/>
+			<DateTimePicker
+				id="idInput4"
+				value="{
+					'type': 'sap.ui.model.type.Date'
+				}"
+			/>
+			<Label text="Rating"/>
+			<Input
+				type="Number"
+				id="idInput5"
+			/>
+			<Label text="Price"/>
+			<Input
+				type="Number"
+				id="idInput6"
+			/>
+		</content>
+		<buttons>
+			<Button
+				id="idSAVEButton"
+				text="SAVE"
+				press="onCreate"
+			/>
+			<Button
+				id="idUPDATEButton"
+				text="UPDATE"
+				press="onUpdate"
+			/>
+			<Button
+				id="idCLOSEButton"
+				text="CLOSE"
+				press="onClose"
+			/>
+		</buttons>
+	</Dialog>
+</c:FragmentDefinition>
