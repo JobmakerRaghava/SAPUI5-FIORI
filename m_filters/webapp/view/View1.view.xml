@@ -1,0 +1,29 @@
+<mvc:View xmlns:layout="sap.ui.layout" controllerName="filters.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <HBox id="hbox" height="50%">
+                <items>
+                    <VBox id="vbox" width="50%" class="vbox1" backgroundDesign="Transparent">
+                        <SearchField id="idSearch" placeholder="Live search" liveChange="onLive">
+                        </SearchField>
+                        <List id="idLi" items="{/country}" footerText="Developed by Raghavendra Kolanu" delete="onDelete" mode="Delete" itemPress="onPress">
+                            <ObjectListItem id="idList" intro="{name}" title="{code}" icon="sap-icon://away" type="Navigation">
+                            </ObjectListItem>
+                        </List>
+                    </VBox>
+
+                    <VBox id="vbox2" width="50%" backgroundDesign="Solid">
+                        <SearchField id="idSearch2" placeholder="normal search" search="onSearch">
+                        </SearchField>
+                        <List id="idLi2" items="{/country}" footerText="Developed by Raghavendra Kolanu" showSeparators="All">
+                            <ObjectListItem id="idList2" intro="{name}" title="{code}" icon="sap-icon://away">
+                            </ObjectListItem>
+                        </List>
+                    </VBox>
+                </items>
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>

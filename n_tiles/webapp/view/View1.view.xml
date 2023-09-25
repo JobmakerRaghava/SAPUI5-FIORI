@@ -1,0 +1,66 @@
+<mvc:View xmlns:appfinder="sap.ushell.ui.appfinder" controllerName="ntiles.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" >
+        <Slider id="slider" value="100" liveChange="onChange"></Slider>
+        <Panel id="p1" headerText="Claims Module" expandable="true" expandAnimation="true">
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id1" frameType="OneByOne" header="Claims" subheader="ICLNOT01">
+                <TileContent id="ti1" footer="Claims creation">
+                    <FeedContent id="fe" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id2" frameType="OneByOne" header="Policy" backgroundImage="https://cdn.siasat.com/wp-content/uploads/2020/02/Virat_Kohli.jpg">
+                <TileContent id="ti2" footer="Policy creation">
+                    <FeedContent id="fe2" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id11" frameType="OneByOne" header="Claims">
+                <TileContent id="ti12" footer="Claims creation">
+                    <FeedContent id="fe3" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id22" frameType="OneByOne" header="Policy" backgroundImage="https://cdn.siasat.com/wp-content/uploads/2020/02/Virat_Kohli.jpg">
+                <TileContent id="ti22" footer="Policy creation">
+                    <FeedContent id="fe23" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <SlideTile id="slide" class="sapUiTinyMargin tileLayout" transitionTime="1000">
+                <GenericTile id="id115" frameType="TwoByOne" header="Claims">
+                    <TileContent id="ti125" footer="Claims creation">
+                        <FeedContent id="fe315" subheader="Tile1"></FeedContent>
+                        <NewsContent id="news" contentText="SAP Unveils Powerful New Player Comparison Tool Exclusively on NFL.com" subheader="August 21, 2013" press="press">
+                        </NewsContent>
+                    </TileContent>
+                </GenericTile>
+                <GenericTile id="id225" frameType="TwoByOne" header="Policy" backgroundImage="https://cdn.siasat.com/wp-content/uploads/2020/02/Virat_Kohli.jpg">
+                    <TileContent id="ti252" footer="Policy creation">
+                        <FeedContent id="fe235" subheader="Tile1"></FeedContent>
+                    </TileContent>
+                </GenericTile>
+            </SlideTile>
+
+        </Panel>
+        <Panel id="p2" headerText="Policy system" expandable="true" expandAnimation="true">
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id14" frameType="OneByOne" header="Claims">
+                <TileContent id="ti111" footer="Claims creation">
+                    <FeedContent id="fe1" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id21" frameType="OneByOne" header="Policy" backgroundImage="https://cdn.siasat.com/wp-content/uploads/2020/02/Virat_Kohli.jpg">
+                <TileContent id="ti11" footer="Policy creation">
+                    <FeedContent id="fe21" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id111" frameType="OneByOne" header="Claims">
+                <TileContent id="ti121" footer="Claims creation">
+                    <FeedContent id="fe31" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMargin tileLayout" id="id221" frameType="OneByOne" header="Policy" backgroundImage="https://cdn.siasat.com/wp-content/uploads/2020/02/Virat_Kohli.jpg">
+                <TileContent id="ti221" footer="Policy creation">
+                    <FeedContent id="fe231" subheader="Tile1"></FeedContent>
+                </TileContent>
+            </GenericTile>
+        </Panel>
+    </Page>
+</mvc:View>
