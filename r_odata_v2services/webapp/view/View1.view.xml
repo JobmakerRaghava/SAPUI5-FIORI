@@ -1,0 +1,27 @@
+<mvc:View controllerName="rodatav2services.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n&gt;title}">
+        <customHeader>
+            <OverflowToolbar id="over1">
+                <content>
+                    <ToolbarSpacer id="tool1"/>
+                    <Title id="title" text="Customer data"></Title>
+                    <ToolbarSpacer id="tool2"/>
+                </content>
+            </OverflowToolbar>
+        </customHeader>
+        <content>
+            <SplitContainer id="split">
+                <detailPages></detailPages>
+                <masterPages>
+                <Page id="page2" title="customer">
+                    <List id="list" items="{/Products}">
+                        <items>
+                            <StandardListItem id="sdlist" title="{ProductName}"></StandardListItem>
+                        </items>
+                    </List>
+                    </Page>
+                </masterPages>
+            </SplitContainer>
+        </content>
+    </Page>
+</mvc:View>
